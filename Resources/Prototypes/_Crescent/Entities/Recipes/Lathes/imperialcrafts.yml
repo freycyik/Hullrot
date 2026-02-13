@@ -266,6 +266,7 @@
   completetime: 2
   materials:
     HardsuitElectronics: 1000
+    Gold: 500
     Steel: 1000
     Durathread: 500
     Tungsten: 1500

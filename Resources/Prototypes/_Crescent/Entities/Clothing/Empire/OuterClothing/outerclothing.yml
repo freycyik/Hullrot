@@ -294,8 +294,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, EnergyShieldClothingEmpire, StreeCredRedeemable]
   id: ClothingOuterHardsuitImperialJuggernaut
-  name: imperial 'KAISERITE' mk III combat hardsuit
-  description: A modular knight's hardsuit, bears the colors of the Kaiser and House Olywir.
+  name: imperial 'GILGAMESH' mk III combat hardsuit
+  description: This armor was worn during the Empire second great expansion among the most respected ranks. Decorated with gold and the use of expensive materials. Gilgamesh is the ultimate representation of protection thanks to his “Shield of Faith”, capable of absorbing bullet impacts
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandatejuggernaut.rsi

@@ -220,8 +220,8 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitImperialJuggernaut
   categories: [ HideSpawnMenu ]
-  name: imperial knight's hardsuit helmet
-  description: A combat hardsuit helmet with internal pressurization systems and an inbuilt tracker system for ballistics.
+  name: gilgamesh hardsuit helmet
+  description: Its eye-focus design provides information on the battlefield, while the invisible right eye displays the status of the armor and an active radio communication log. Who needs 100% vision when Kaiser blesses you in combat?
   components:
   - type: BreathMask
   - type: Sprite
