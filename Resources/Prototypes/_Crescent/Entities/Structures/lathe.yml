@@ -1586,11 +1586,11 @@
     idleState: fab-idle
     runningState: fab-active
     staticRecipes:
-    - FabricsCrate
     - WineCrate
-    - AntibioticCrate
+    - ImperialScrap
     - CyberneticCrate
-    - BadscrapCrate
+    - ImperialArmor
+    - ImperialQualitySalvage
   - type: Anchorable
     flags:
     - Anchorable
@@ -1688,7 +1688,7 @@
   parent: BaseLathe
   id: GliessTradeGoodPrinter
   name: Gliess Santo commodity fablathe
-  description: A hacked fablathe preloaded with many commodity patterns. A independent merchant's best friend.
+  description: A hacked fablathe preloaded with many commodity patterns. An independent merchant's best friend. # Note for future contributors: Take grammar lessons if you're not originally from any english-speaking country
   components:
   - type: Sprite
     sprite: _Crescent/Structures/cratefab.rsi
@@ -1758,7 +1758,8 @@
     - UnionWeaponCrate
     - UnionBallisticsCrate
     - UnionVodka
-    - ScrapCrate
+    - UnionScrap
+    - UnionQualitySalvage
   - type: Anchorable
     flags:
     - Anchorable
@@ -1799,6 +1800,93 @@
     - AntibioticCrate
     - AlcoholCrate
     - DrugCrate
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+
+#Newport
+
+- type: entity
+  parent: BaseLathe
+  id: NewportTradeGoodPrinter
+  name: Newport commodity fablathe
+  description: A cheap fablathe preloaded with many commodity patterns. An independent merchant's best friend. # Note for future contributors: Take grammar lessons if you're not originally from any english-speaking country
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticRecipes:
+    - GoodSilkCrate
+    - FillamentSilkCrate
+    - BadscrapCrate
+    - Ammocrate
+    - Scopcrate
+    - AlloysCrate
+    - ScrapCrate
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+
+#Freeport
+
+- type: entity
+  parent: BaseLathe
+  id: FreeportTradeGoodPrinter
+  name: Freeport commodity fablathe
+  description: A hacked fablathe preloaded with many commodity patterns. A shady merchant's best friend. # Note for future contributors: Take grammar lessons if you're not originally from any english-speaking country
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticRecipes:
+    - AntibioticCrate
+    - DrugCrate
+    - FreeportScrappersLootbox
+    - GunpartsCrate
+    - PlasmaCrate
+    - FreeportValuableScrap
   - type: Anchorable
     flags:
     - Anchorable
