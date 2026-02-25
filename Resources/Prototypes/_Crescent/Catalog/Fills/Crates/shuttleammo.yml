@@ -443,7 +443,7 @@
 - type: entity
   id: Crate120mmAmmo
   parent: N14CrateAluminium
-  name: 120mm HE 'Anvil' artillery shell crate
+  name: 120mm HE 'Anvil' Shell Crate
   description: 20 shells of HE ammunition for the 'Anvil' weapon platform.
   components:
   - type: StorageFill
