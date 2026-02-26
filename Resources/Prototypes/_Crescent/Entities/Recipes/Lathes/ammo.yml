@@ -503,7 +503,8 @@
 
 - type: latheRecipe
   id: Striker50mmPlasmaRecipe
-  result: Magazine50mmSAPHE  completetime: 2
+  result: Magazine50mmSAPHE
+  completetime: 2
   materials:
     Steel: 3000
     Plasma: 2500
