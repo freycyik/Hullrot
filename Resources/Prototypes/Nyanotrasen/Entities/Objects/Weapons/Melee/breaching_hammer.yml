@@ -55,4 +55,4 @@
     recipes:
       - BreachingHammer
   - type: StaticPrice
-    price: 1500
+    price: 800
