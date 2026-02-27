@@ -1,6 +1,6 @@
 - type: entity
   id: BulletKineticShuttle #Exhumer
-  parent: BaseBullet
+  parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -20,7 +20,7 @@
     maxIntensity: 25
     intensitySlope: 15
     totalIntensity: 500
-    maxTileBreak: 5
+    maxTileBreak: 500
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn
