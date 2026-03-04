@@ -4,7 +4,7 @@
   description: job-description-dsm-conscript-event
   playTimeTracker: JobKnightDSM
   weight: 50
-  startingGear: ReinforcementDSMRiflemanConscriptGear
+  startingGear: ReinforcementDSMConscriptRiflemanGear
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconImperialKnight"
