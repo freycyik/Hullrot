@@ -15,7 +15,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 400
+          damage: 400 #we removed the instant destruction threshold for now, eB don't forget this!
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
