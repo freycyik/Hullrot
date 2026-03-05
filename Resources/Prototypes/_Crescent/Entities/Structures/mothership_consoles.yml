@@ -1,4 +1,3 @@
-
 - type: entity
   id: NCWLMothershipComputer
   parent: BaseMothershipComputer
@@ -59,7 +58,7 @@
     - Covetor
     - Gnosis
     - Praxis
-    - Dragoon
+    - Praetorian
 
 - type: entity
   id: NemesisMothershipComputer
