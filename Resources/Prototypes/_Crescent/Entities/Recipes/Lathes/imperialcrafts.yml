@@ -685,6 +685,15 @@
     ShipHull: 1500
 
 - type: latheRecipe
+  id: RaiderLPC
+  result: ShipVoucherRaider
+  completetime: 1
+  materials:
+    StarshipEngineComponents: 4000
+    ShipComponents: 4500
+    ShipHull: 5000
+
+- type: latheRecipe
   id: TriumphantLPC
   result: ShipVoucherTriumphant
   completetime: 1

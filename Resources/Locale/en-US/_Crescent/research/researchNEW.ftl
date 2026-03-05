@@ -116,6 +116,7 @@ research-technology-imperial-nemesis = Imperial Artillery Carrier
 research-technology-imperial-torturer = Imperial Stealth Bomber
 research-technology-imperial-magnate = Imperial Fire Support Vessel
 research-technology-imperial-craftcomps = Imperial Weapon Components
+research-technology-imperial-raider = Imperial Troop Transport
 
 # NCWL
 research-technology-communard-clothes = Communard Clothes
