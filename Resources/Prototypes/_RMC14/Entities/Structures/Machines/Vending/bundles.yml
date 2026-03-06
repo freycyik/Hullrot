@@ -23,7 +23,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Clothing\Head\Misc\chickenhead.rsi
+    sprite: _Crescent/Structures/syndicatearmory.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
