@@ -4,7 +4,7 @@
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitImperialWorker
   name: imperial worker hardsuit
-  description: A modular worker's hardsuit, bears the colors of the Kaiser and House Olywir.
+  description: A modular worker's hardsuit, bears the colors of the Kaiserin and House Kircheis.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandateworker.rsi
@@ -35,12 +35,16 @@
     price: 2500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterHardsuitImperialWorker
+      - ClothingOuterHardsuitClarizianWorker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, StreeCredRedeemableHigh]
   id: ClothingOuterHardsuitInspector
   name: mk. IV 'ORATEUR' combat hardsuit
-  description: A modular combat hardsuit for the Advocati Compliance Corps. Bears the colors of the Kaiser's administration.
+  description: A modular combat hardsuit for the Advocati Compliance Corps. Bears the colors of the Kaiserin's administration.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/inspector.rsi
@@ -59,7 +63,7 @@
       flatReductions:
         Blunt: 25
         Slash: 25
-        Piercing: 65
+        Piercing: 50
         Heat: 25
         Caustic: 25
   - type: ClothingSpeedModifier
@@ -107,6 +111,10 @@
     price: 2500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterHardsuitClarizianWorker
+      - ClothingOuterHardsuitImperialWorker
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -169,12 +177,18 @@
     price: 2500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterHardsuitClarize
+      - ClothingOuterHardsuitClarizianWorker
+      - ClothingOuterHardsuitImperialSoldier
+      - ClothingOuterHardsuitImperialWorker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, StreeCredRedeemableHigh]
   id: ClothingOuterHardsuitImperialCommand
   name: imperial command hardsuit
-  description: A modular commander's hardsuit, bearing the colors of House Olywir.
+  description: A modular commander's hardsuit, bearing the colors of House Kircheis.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandatecommand.rsi
@@ -210,7 +224,7 @@
   parent: [ClothingOuterHardsuitBase,StreeCredRedeemableLow]
   id: ClothingOuterHardsuitImperialSoldier
   name: imperial 'JANNISSARY' mk I combat hardsuit
-  description: A modular soldier's hardsuit, bears the colors of the Kaiser and House Olywir.
+  description: A modular soldier's hardsuit, bears the colors of the Kaiserin and House Kircheis.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandatesoldier.rsi
@@ -241,12 +255,19 @@
     price: 4500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    difficulty: 2
+    recipes:
+      - ClothingOuterHardsuitImperialSoldier
+      - ClothingOuterHardsuitImperialWorker
+      - ClothingOuterHardsuitClarize
+      - ClothingOuterHardsuitClarizianWorker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, StreeCredRedeemable]
   id: ClothingOuterHardsuitImperialKnight
   name: imperial 'KONIGSCHILD' mk II combat hardsuit
-  description: A modular knight's hardsuit, bears the colors of the Kaiser and House Olywir.
+  description: A modular knight's hardsuit, bears the colors of the Kaiserin and House Kircheis.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandateknight.rsi
@@ -277,6 +298,12 @@
     price: 6000
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    difficulty: 3
+    recipes:
+      - ClothingOuterHardsuitImperialKnight
+      - ClothingOuterHardsuitImperialSoldier
+      - ClothingOuterHardsuitImperialWorker
 
 - type: entity
   parent: ClothingOuterHardsuitImperialSoldier
@@ -321,6 +348,12 @@
     price: 1500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterArmorImperialTrooperArmor
+      - ClothingHeadHelmetImperialTrooperHelmet
+      - ClothingOuterArmorClarizianTrooperArmor
+      - ClothingHeadHelmetClarizianTrooperHelmet
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -349,6 +382,12 @@
     price: 1500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterArmorClarizianTrooperArmor
+      - ClothingHeadHelmetClarizianTrooperHelmet
+      - ClothingOuterArmorImperialTrooperArmor
+      - ClothingHeadHelmetImperialTrooperHelmet
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -378,6 +417,14 @@
   - type: AllowSuitStorage
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterArmorImperialArmorPrestige
+      - ClothingHeadHelmetImperialKnightCommanderHelmet
+      - ClothingOuterArmorImperialTrooperArmor
+      - ClothingHeadHelmetImperialTrooperHelmet
+      - ClothingOuterArmorClarizianTrooperArmor
+      - ClothingHeadHelmetClarizianTrooperHelmet
 
 #coats
 
@@ -411,7 +458,7 @@
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatImperialAdvocatus
   name: advocati coat
-  description: An ornate, durathread-reinforced officer's coat bearing House Olywir colors.
+  description: An ornate, durathread-reinforced officer's coat bearing House Kircheis colors.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/OuterClothing/advocatus.rsi
@@ -484,6 +531,9 @@
     price: 2000
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterCoatImperialGovernor
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -499,6 +549,10 @@
     price: 1000
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterCoatImperialParade
+      - ClothingOuterCoatClarizianOfficer
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -514,6 +568,10 @@
     price: 1000
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingOuterCoatClarizianOfficer
+      - ClothingOuterCoatImperialParade
 
 - type: entity
   parent: ClothingOuterEVASuitBase
@@ -573,6 +631,11 @@
     price: 2000
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # Sector Crescent
+    difficulty: 2
+    recipes:
+      - ClothingOuterCoatImperialRitter
+      - ClothingOuterHardsuitImperialWorker
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -609,3 +672,7 @@
     price: 2500
   - type: ClothingAddFaction
     faction: DSM
+  - type: ReverseEngineering # SectorCrescent
+    difficulty: 4
+    recipes:
+      - ClothingOuterHardsuitImperialNullweavePsion

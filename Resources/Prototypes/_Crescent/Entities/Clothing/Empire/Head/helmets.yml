@@ -40,15 +40,12 @@
     sprite: _Crescent/Clothing/Empire/Head/inspector.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/Empire/Head/inspector.rsi
-  - type: PointLight # Literally only so the linter doesn't fail, not intended to be a real light 🥀
-    radius: 1
-    color: "#210032"
+  - type: PointLight
+    radius: 6
+    color: "#ffffed"
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
-  - type: NightVision
-    isEquipment: true
-    color: White
   - type: IdentityBlocker
   - type: Armor
     modifiers:
@@ -241,12 +238,17 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHatClarizeBeret
+      - ClothingHeadHatImperialBeret
+      - ClothingHeadHatImperialPeakedCap
 
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatAdvocatus
   name: advocati peaked cap
-  description: A peaked cap, stamped with the Olywir Eagle of office.
+  description: A peaked cap, stamped with the Kircheis Eagle of office.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/advocati.rsi
@@ -274,6 +276,11 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHatImperialBeret
+      - ClothingHeadHatImperialPeakedCap
+      - ClothingHeadHatClarizeBeret
 
 - type: entity
   parent: ClothingHeadBase
@@ -309,7 +316,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHelmetImperialTrooperHelmet
   name: imperial helmet
-  description: A sturdy helmet to enforce the Kaiser's will.
+  description: A sturdy helmet to enforce the Kaiserin's will.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/mandatehelmet.rsi
@@ -332,6 +339,12 @@
     - Hair
     - Snout
   - type: IdentityBlocker
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHelmetImperialTrooperHelmet
+      - ClothingOuterArmorImperialTrooperArmor
+      - ClothingHeadHelmetClarizianTrooperHelmet
+      - ClothingOuterArmorClarizianTrooperArmor
 
 - type: entity
   parent: ClothingHeadBase
@@ -360,12 +373,18 @@
     - Hair
     - Snout
   - type: IdentityBlocker
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHelmetClarizianTrooperHelmet
+      - ClothingOuterArmorClarizianTrooperArmor
+      - ClothingHeadHelmetImperialTrooperHelmet
+      - ClothingOuterArmorImperialTrooperArmor
 
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHelmetImperialKnightCommanderHelmet
   name: prestigous imperial helmet
-  description: A sturdy helmet to enforce the Kaiser's will. Comes with paint-of-gold to signify rank and status.
+  description: A sturdy helmet to enforce the Kaiserin's will. Comes with paint-of-gold to signify rank and status.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/mandatecommanderhelmet.rsi
@@ -388,6 +407,14 @@
     - Hair
     - Snout
   - type: IdentityBlocker
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHelmetImperialKnightCommanderHelmet
+      - ClothingOuterArmorImperialArmorPrestige
+      - ClothingHeadHelmetImperialTrooperHelmet
+      - ClothingOuterArmorImperialTrooperArmor
+      - ClothingHeadHelmetClarizianTrooperHelmet
+      - ClothingOuterArmorClarizianTrooperArmor
 
 - type: entity
   parent: ClothingHeadBase
@@ -417,6 +444,9 @@
     - Hair
     - Snout
   - type: IdentityBlocker
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHelmetImperialWorkerHelmet
 
 - type: entity
   parent: ClothingHeadEVAHelmetBase
@@ -443,7 +473,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatImperialPeakedCap
   name: imperial peaked cap
-  description: An Imperial peaked cap bearing the House Olywir coat of arms.
+  description: An Imperial peaked cap bearing the House Kircheis coat of arms.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/mandatecap.rsi
@@ -453,6 +483,11 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: ReverseEngineering # Sector Crescent
+    recipes:
+      - ClothingHeadHatImperialPeakedCap
+      - ClothingHeadHatImperialBeret
+      - ClothingHeadHatClarizeBeret
 
 - type: entity
   parent: ClothingHeadBase

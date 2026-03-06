@@ -1209,22 +1209,51 @@
       idleState: icon
       runningState: icon
       staticRecipes:
-        - SluggieHE
-        - SluggieAP
-        - SluggieEMP
-        - IdnaTorpedoRecipe
-        - Automortar90
-        - MagazineGrenadeEmpty
-        - Needler60
-        - MagazineVulcan
-        - MagazineFlak
-        - 48mmEMPRocket
-        - 48mmHighYieldRocket
-        - 48mmLowYieldRocket
-        - RocketMagazineEmpty
-        - LensInfaredRecipe
-        - LensPlasmaRecipe
-        - LensXrayRecipe
+        #- SluggieHE
+        #- SluggieAP
+        #- SluggieEMP
+        #- IdnaTorpedoRecipe
+        #- Automortar90
+        #- MagazineGrenadeEmpty
+        #- Needler60
+        #- MagazineVulcan
+        #- MagazineFlak
+        #- 48mmEMPRocket
+        #- 48mmHighYieldRocket
+        #- 48mmLowYieldRocket
+        #- RocketMagazineEmpty
+        #- LensInfaredRecipe
+        #- LensPlasmaRecipe
+        #- LensXrayRecipe
+        # NEW SHIPGUN AMMO RECIPIES START
+        - Screamer20mmRegularRecipe
+        - Screamer20mmGyrostableRecipe
+        - Scout35mmRegularRecipe
+        - Scout35mmGyrostableRecipe
+        - Striker50mmRegularRecipe
+        - Striker50mmGyrostableRecipe
+        - Striker50mmPlasmaRecipe
+        - 88mmFlakRegularRecipe
+        - Resolute90mmRegularRecipe
+        - Resolute90mmGyrostableRecipe
+        - Resolute90mmPlasmaRecipe
+        #- Anvil120mmRegularRecipe #shellfab
+        #- Anvil120mmGyrostableRecipe #shellfab
+        #- Anvil120mmPlasmaRecipe #shellfab
+        #- Leviathan300mmRecipe #shellfab
+        - Shortbow48mmRegularRecipe
+        - Shortbow48mmGorlexRecipe
+        - Azimuth60mmRegularRecipe
+        - Azimuth60mmGorlexRecipe
+        - Azimuth60mmNCWLRecipe
+        - Azimuth60mmAdvancedRecipe
+        - Arbalest95mmRegularRecipe
+        - Arbalest95mmNCWLRecipe
+        - Arbalest95mmGorlexRecipe
+        #- Gargoyle240mmRegularRecipe #shellfab
+        #- Gargoyle240mmNCWLRecipe #shellfab
+        #- Catapult330mmRegularRecipe #shellfab
+        #NEW SHIPGUN AMMO RECIPIES END
         - Cartridge40mmFrag
         - Cartridge40mmCan
         - Cartridge40mmHEDP
@@ -1667,34 +1696,36 @@
     idleState: icon
     runningState: building
     staticRecipes:
-    - BioGenMilk
-    - BioGenMilkSoy #Gem
-    - BioGenEthanol
-    - BioGenCream
-    - BioGenBlackpepper
-    - BioGenEnzyme
-    - BioGenFlour
-    - BioGenSugar
-    - BioGenMonkeyCube
-    - BioGenKoboldCube
-    - CowCube
-    - GoatCube
+    #- BioGenMilk
+    #- BioGenMilkSoy #Gem
+    #- BioGenEthanol
+    #- BioGenCream
+    #- BioGenBlackpepper
+    #- BioGenEnzyme
+    #- BioGenFlour
+    #- BioGenSugar
+    #- BioGenMonkeyCube
+    #- BioGenKoboldCube
+    #- CowCube
+    #- GoatCube
     - MothroachCube
-    - MouseCube
-    - BioGenMaterialCloth1
-    - BioGenMaterialCardboard1
-    - BioGenPaper
-    - BioGenPaperRolling1
-    - BioGenCandle
+    #- MouseCube
+    #- BioGenMaterialCloth1
+    #- BioGenMaterialCardboard1
+    #- BioGenPaper
+    #- BioGenPaperRolling1
+    #- BioGenCandle
     - BioGenPlantBGone
     - BioGenWeedKiller
     - BioGenPestKiller
     - BioGenLeft4Zed
     - BioGenEZNutrient
     - BioGenRobustHarvest
-    - BioGenBoozeVendRestock
-    - BioGenCondimentsRestock
-    - BioGenChefVendRestock
+    #- BioGenBoozeVendRestock
+    #- BioGenCondimentsRestock
+    #- BioGenChefVendRestock
+    - BioGenFoodNutribrick
+    - BioGenFoodPSB
 
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
