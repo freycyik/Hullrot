@@ -24,7 +24,7 @@
   components:
   - type: Sprite
     sprite: _Crescent/Structures/syndicatearmory.rsi
-    state: icon
+    state: "off"
   - type: CMVendorBundle
     bundle:
     - ClothingHeadsetQM
